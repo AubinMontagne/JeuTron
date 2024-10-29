@@ -1,104 +1,144 @@
-/* CSS Temporaire */
-/* Styles de base */
-body, html {
+/* Reset de base */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Container pour centrer le contenu */
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+/* Police et couleurs générales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
 }
 
-/* En-tête */
+/* Styles de l'en-tête */
 header {
-    background-color: #222;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-/* Section principale */
-main {
-    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #111;
+    border-bottom: 2px solid #09f;
 }
 
-/* Description du projet */
-.project-description {
-    margin-bottom: 40px;
+.logo {
+    font-size: 24px;
+    color: #09f;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
-.project-description h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-/* Articles de blog */
-.blog-posts h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+nav ul li a {
+    text-decoration: none;
+    color: #09f;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
-.blog-post {
-    border-bottom: 1px solid #ccc;
-    padding: 20px 0;
+nav ul li a:hover {
+    color: #f90;
 }
 
-.blog-post h3 {
-    margin-top: 0;
-    color: #222;
+/* Section Héroïque */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), #111 80%);
 }
 
-.blog-post .date {
-    font-size: 0.9em;
-    color: #777;
+.hero h1 {
+    font-size: 36px;
+    color: #09f;
+    margin-bottom: 10px;
 }
 
-.blog-post p {
-    font-size: 1em;
-    line-height: 1.6em;
+.hero p {
+    font-size: 18px;
+    color: #aaa;
+}
+
+/* Articles de Blog */
+.blog-posts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.post {
+    background-color: #111;
+    padding: 20px;
+    width: 250px;
+    border: 1px solid #09f;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.post::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(#09f, #f90);
+    animation: glowing 2s linear infinite;
+}
+
+.post h2 {
+    font-size: 20px;
+    color: #09f;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 16px;
+    color: #ccc;
 }
 
 .read-more {
     display: inline-block;
-    margin-top: 10px;
-    padding: 8px 15px;
-    background-color: #007bff;
-    color: #fff;
+    color: #09f;
     text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .read-more:hover {
-    background-color: #0056b3;
+    color: #f90;
 }
 
-/* Pied de page */
+/* Footer */
 footer {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 0;
+    padding: 20px;
     text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
+    background-color: #111;
+    color: #888;
+    border-top: 2px solid #09f;
+}
+
+.social-icons a {
+    color: #09f;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f90;
+}
+
+/* Animation */
+@keyframes glowing {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
 }
