@@ -1,1 +1,135 @@
 
+/* Style de base et corps de la page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d; /* Fond sombre rappelant l'univers de Tron */
+    color: #e5e5e5; /* Couleur de texte légèrement grise pour réduire le contraste */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Effet de néon pour les textes */
+h1, h2, h3 {
+    color: #00f6ff;
+    text-shadow: 0 0 5px #00f6ff, 0 0 10px #00e6e6, 0 0 15px #00e6e6;
+}
+
+/* En-tête */
+header {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #00f6ff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #80ffff; /* Bleu plus clair pour donner une touche de variété */
+}
+
+/* Section principale */
+.project-description, .blog-posts {
+    margin: 20px 0;
+}
+
+.project-description h2, .blog-posts h2 {
+    border-bottom: 1px solid #00f6ff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.project-description p, .blog-post p {
+    margin-bottom: 10px;
+}
+
+/* Style des articles de blog */
+.blog-post {
+    background-color: #111;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 4px solid #00f6ff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.blog-post h3 {
+    color: #ffa500; /* Une touche d'orange pour contraster avec le bleu */
+    text-shadow: 0 0 5px #ffa500, 0 0 10px #e69900;
+}
+
+.blog-post .date {
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+/* Bouton "Lire plus" avec effet néon */
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #00f6ff;
+    border: 1px solid #00f6ff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    text-shadow: 0 0 5px #00f6ff, 0 0 10px #00f6ff;
+}
+
+.read-more:hover {
+    background-color: #00f6ff;
+    color: #111;
+    box-shadow: 0 0 15px #00f6ff, 0 0 25px #00e6e6;
+}
+
+/* Pied de page */
+footer {
+    background-color: #111;
+    padding: 15px 0;
+    text-align: center;
+    color: #aaaaaa;
+    border-top: 2px solid #00f6ff;
+    text-shadow: 0 0 5px #00f6ff;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Effets interactifs pour les liens */
+a {
+    color: #00f6ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* Media Queries pour l'adaptabilité mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .read-more {
+        width: 100%;
+        text-align: center;
+    }
+}
