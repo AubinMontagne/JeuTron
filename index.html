@@ -7,44 +7,75 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <!-- En-tête -->
-    <header>
-        <div class="container">
-            <h1>DevBlog - Projet Tron</h1>
-            <p>Suivez le développement du projet </p>
-        </div>
-    </header>
-
-    <!-- Section principale -->
-    <main>
-        <div class="container">
-            <!-- Section de description du projet -->
-            <section class="project-description">
-                <h2>À propos du Projet Tron</h2>
-                <p>Ce projet est une réinterprétation du jeu classique Tron, développé en Java en utilisant une architecture MVC (Métier-Vue-Contrôleur). Aimant beaucoup l'univers de Tron, je veux tenter de refaire le jeu.</p><br>
-                <p>Cela va m'aider à utiliser beaucoup de notions, je veux implémenter du réseau pour jouer en multijoueur, essayer de faire une IA, et également de moderniser le jeu en trouvant des fonctionnalités à ajouter.</p><br>
-                <p>Pour l'instant, le jeu de l'univers Tron que je vais faire est celui le plus iconique, avec les motos; mais je n'exclue pas de faire d'autres mini-jeux inspirés de l'univers, ou de plus tard aller le faire sur Unity/Unreal Engine.</p>
-            </section>
-
-            <!-- Section d'articles de blog -->
-            <section class="blog-posts">
-                <h2>Les Updates, problèmes rencontrées et du blabla...</h2>
-
-                <article class="blog-post">
-                    <h3>Début du projet, pourquoi le faire et pourquoi la structure MVC ?</h3>
-                    <p class="date">15 octobre 2024</p>
-                    <p>Dans ce premier article, j'explique pourquoi j'ai choisi une structure MVC pour ce projet et comment j'ai structuré mon code pour commencer le développement du jeu Tron.</p>
-                    <a href="./article/article1.html" class="read-more">Lire plus</a>
-                </article>
-            </section>
-        </div>
-    </main>
-
-    <!-- Pied de page -->
-    <footer>
-        <div class="container">
-          
-        </div>
-    </footer>
+   <div class="grid"></div>
+	
+	<div class="container">
+		<header>
+			<h1>TRON: SYSTÈME</h1>
+			<nav>
+				<a href="#accueil">Accueil</a>
+				<a href="#programmes">Programmes</a>
+				<a href="#autres">Autres</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</header>
+		
+		<section class="hero" id="accueil">
+			<h2>BIENVENUE SUR MON SITE</h2>
+			<p>Entrez dans monde numérique où les limites entre réalité et virtuel s'effacent.Le site est inspirée de l'univers de TRON.</p>
+			<button class="boutonlum">ACCÉDER NUL PART</button>
+		</section>
+		
+		<div class="barlum"></div>
+		
+		<section class="features" id="programmes">
+			<div class="feature">
+				<div class="disque">
+					<div class="disque-inner"></div>
+				</div>
+				<h3>Mon Disque d'Identité</h3>
+				<p>Mon CV, ce que je fais dans la vie.</p>
+			</div>
+			<div class="feature">
+				<div class="disque">
+					<div class="disque-inner"></div>
+				</div>
+				<h3>PLACEHOLDER</h3>
+				<p>placeholder</p>
+			</div>
+			<div class="feature">
+				<div class="disque">
+					<div class="disque-inner"></div>
+				</div>
+				<h3>PLACEHOLDER</h3>
+				<p>placeholder</p>
+			</div>
+			<div class="feature">
+				<div class="disque">
+					<div class="disque-inner"></div>
+				</div>
+				<h3>PLACEHOLDER</h3>
+				<p>placeholder</p>
+			</div>
+		</section>
+		
+		<section class="hero" id="grille">
+			<h2>EXPLOREZ MES PROJETS</h2>
+			<p>Mon univers numérique est constamment en expansion. Découvrez de nouveaux programmes régulièrement mis à jour.</p>
+			<div class="barlum"></div>
+		</section>
+		
+		<section class="hero" id="contact">
+			<h2>COMMUNIQUEZ AVEC MOI</h2>
+			<p>Des questions? Besoin d'assistance? Contactez-moi via : ...</p>
+			<button class="boutonlum">INITIALISER LE CONTACT</button>
+		</section>
+		
+		<footer>
+			<p>© 2025 BINBIN | Tous droits réservés</p>
+			
+		</footer>
+	</div>
+	
 </body>
 </html>
